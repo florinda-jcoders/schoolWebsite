@@ -1,0 +1,45 @@
+.all {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.vertikal1 {
+  flex-direction: row;
+  font: 100px;
+}
+
+.sdi1 {
+  width: 70px;
+  height: 5px;
+  background-color: red;
+}
+
+.text1 {
+  color: #252B42;
+}
+
+.text2 {
+  color: #737373;
+}
+
+.text3 {
+  color: #96BB7C;
+}
+
+.vertikal2 {
+  flex-direction: column;
+}
+
+.image {
+  margin-left: 900px;
+  margin-top:-200px;
+  gap: 30px;
+  width: 1000px;
+  height: 900px;
+  
+  width: 376.94px;
+  height: 440.61px;
+  background: url("../assets/image.png");
+
+}
