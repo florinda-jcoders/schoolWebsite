@@ -4,37 +4,39 @@ h1{
     color:#252B42;
     font-size:24px;
     line-height:32px;
-    grid-area: logo
 }
 
 .login{
     color:#96BB7C;
     font-size:14px;
-    align-items:right;
         font-family:'Montserrat';
         font-weight:700;
                 grid-area: menu
 }
 
 ul{
-    font-family:'Montserrat';
-    font-weight:700;
+        display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
     color:#737373;
     font-size:14px;
     line-height:24px;
     letter-spacing:0.2px;
     align-items:center;
-     list-style: none;
-    grid-area: menu;
-    list-style: none;
-    justify-self: end;
+    justify-self:left;
 }
 
 li{
-    display:inline-block;
-            grid-area: menu
+      display: inline-block;
+  margin: 0 15px;
 }
 
+ul li a {
+    text-decoration:none;
+    color: #737373;
+}
 .joinusbutton{
     background-color:#96BB7C;
     width:137px;
@@ -48,16 +50,97 @@ li{
     justify-content:center;
     line-height:22px;
     gap:15px;
-        grid-area: menu
 }
 
-.navbar{
+nav{
     background-color:white;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 5fr;
-    display:grid;
-    grid-template: "logo menu";
-    align-items:center;
-    height:91px;
+  align-items: center;
+  display:flex;
+  height:91px;
+  padding: 0 40px;
+  justify-content:space-between;
+   margin: 0 auto;
     
 }
+
+nav .left input,
+nav .left label {
+  display: none;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* space between logo and menu */
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas: "logo hamburger" "menu menu";
+    height: auto;
+    }
+
+    .left{
+        grid-area: logo;
+    }
+
+    .right{
+        grid-area: hamburger;
+    }
+
+
+      nav ul {
+    display: none;
+  }
+
+    nav #open-menu:checked ~ ul {
+        width: 100%;
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 80px);
+        flex-direction: column;
+    }
+
+    nav .left label {
+        display: block;
+        font-size: 30px;
+        justify-self: end;
+    }
+
+
+
+    h1{
+        font-size:15px;
+    }
+
+    .login{
+        font-size:10px;
+    }
+
+    .joinusbutton{
+        width: 100px;
+        height:35px;
+        font-size:12px;
+    }
+
+    nav ul {
+  display: none;
+}
+
+nav #open-menu:checked ~ ul {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+
