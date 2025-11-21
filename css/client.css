@@ -1,0 +1,63 @@
+.all {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  margin-left: 130px;
+}
+
+.vertikal1 {
+  font-size: 25px;
+  flex-direction: row;
+}
+
+.sdi1 {
+  width: 70px;
+  height: 5px;
+  background-color: red;
+}
+
+.text1 {
+  color: #252B42;
+}
+
+.text2 {
+  color: #737373;
+}
+.text3{
+   color: #96BB7C;
+   display: inline;
+}
+.text4{
+   color: #96BB7C;
+   display: inline;
+   font-size: 30px;
+       margin-left: 5px;
+    margin-top: 45px;
+
+}
+.palidhje {
+  color: #96BB7C;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.vertikal2 {
+  width: 50%;
+  margin-left:40px;
+  flex-direction: column;
+}
+
+.image {
+  gap: 30px;
+  width: 1000px;
+  height: 900px;
+
+  width: 376.94px;
+  height: 440.61px;
+  background: url("../assets/image.png");
+
+}
