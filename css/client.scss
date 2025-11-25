@@ -1,0 +1,78 @@
+body{
+    background-color: aqua;
+}
+.krejt {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 700px;
+
+}
+
+.pjesa1 {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(206, 187, 164);
+}
+.kuqe{
+    background-color: red;
+    width:70px;
+    height: 30px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 15px;
+    
+}
+.rretha{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-top: 230px;
+    gap: 20px;
+}
+.rreth1{
+   background-color: white;
+   border-radius: 100px;
+   width: 40px;
+   height:40px;
+}
+.rreth2{
+   background-color: white;
+   border-radius: 100px;
+   width: 40px;
+   height:40px;
+}
+.rreth3{
+   background-color: white;
+   border-radius: 100px;
+   width: 40px;
+   height:40px;
+}
+
+.pjesa2 {
+ width: 50%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.text1{
+    display: flex;
+    flex-direction: row;
+        margin-left: 20px;
+        gap:60px;
+}
+h3{
+    color: rgb(121, 196, 121);
+
+}
+.hint{
+    background-color: rgb(31, 37, 49);
+    width:55px;
+    height: 30px;
+    color: white;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
