@@ -1,13 +1,17 @@
 h1 {
   font-family: "Montserrat";
   font-weight: 700;
-  color: #252B42;
+  color: #252b42;
   font-size: 24px;
   line-height: 32px;
 }
 
+input {
+  display: none;
+}
+
 .login {
-  color: #96BB7C;
+  color: #96bb7c;
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 700;
@@ -39,7 +43,7 @@ ul li a {
 }
 
 .joinusbutton {
-  background-color: #96BB7C;
+  background-color: #96bb7c;
   width: 137px;
   height: 52px;
   border-radius: 5px;
@@ -71,7 +75,7 @@ nav .left label {
 .left {
   display: flex;
   align-items: center;
-  gap: 40px; /* space between logo and menu */
+  gap: 40px;
 }
 
 .right {
@@ -81,51 +85,70 @@ nav .left label {
 }
 
 @media screen and (max-width: 768px) {
-  nav {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px 1fr;
-    grid-template-areas: "logo hamburger" "menu menu";
-    height: auto;
-  }
-  .left {
-    grid-area: logo;
-  }
-  .right {
-    grid-area: hamburger;
-  }
   nav ul {
     display: none;
   }
-  nav #open-menu:checked ~ ul {
-    width: 100%;
-    grid-area: menu;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 80px);
-    flex-direction: column;
-  }
+  /* Hamburger visible */
   nav .left label {
     display: block;
     font-size: 30px;
-    justify-self: end;
+    cursor: pointer;
   }
-  h1 {
-    font-size: 15px;
-  }
-  .login {
-    font-size: 10px;
-  }
-  .joinusbutton {
-    width: 100px;
-    height: 35px;
-    font-size: 12px;
-  }
-  nav ul {
-    display: none;
-  }
-  nav #open-menu:checked ~ ul {
+  /* Show menu when checkbox is checked */
+  #open-menu:checked ~ .left ul {
+    position: fixed;
+    top: 91px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 91px);
+    z-index: 999;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
+  /* Hide the right section */
+  #open-menu:checked ~ .right {
+    display: none;
+  }
+}
+nav .left label {
+  display: block;
+  font-size: 30px;
+  justify-self: end;
+}
+
+#open-menu:checked ~ .right {
+  display: none;
+}
+
+h1 {
+  font-size: 15px;
+}
+
+.login {
+  font-size: 10px;
+}
+
+.joinusbutton {
+  width: 100px;
+  height: 35px;
+  font-size: 12px;
+}
+
+nav ul {
+  display: none;
+}
+
+nav #open-menu:checked ~ .left ul {
+  position: fixed;
+  top: 91px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 91px);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }/*# sourceMappingURL=navbar.css.map */
