@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Mortarboard (graduation cap) -->
+  <g transform="translate(0,6)">
+    <polygon points="64,6 6,36 64,66 122,36" fill="#2f3640"/>
+    <rect x="40" y="66" width="48" height="18" rx="9" fill="#1f2429"/>
+    <!-- Tassel -->
+    <path d="M92 30 C92 30, 96 34, 96 46 C96 58, 82 64, 72 66" stroke="#f0c419" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="92" cy="30" r="4" fill="#f0c419"/>
+  </g>
+</svg>
