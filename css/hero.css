@@ -24,7 +24,22 @@
 .text {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.join-text {
+  margin: 12px;
+  font-size: 24px;
+  color: #96bb7c;
+}
+.number-text {
+  margin: 12px;
+  font-size: 48px;
+  color: #252b42;
+  font-weight: 600;
+}
+.quote {
+  margin: 12px;
+  font-size: 32px;
+  color: #252b42;
+}
 @media (min-width: 900px) {
   body {
     padding-right: 1rem;
@@ -32,18 +47,33 @@
 }
 
 .box {
-  .yes {
+  margin: 12px;
+  .get-quote {
     background-color: #96bb7c;
-    border-color: green;
     color: white;
     margin-right: 10px;
     padding: 10px;
+    border-color: #96bb7c;
   }
 
-  .no {
+  .learn-more {
     background-color: white;
-    border-color: #96bb7c;
+    border-color: white;
     color: #96bb7c;
+    padding: 10px;
+  }
+  .get-quote:hover {
+    background-color: white;
+    color: #96bb7c;
+    margin-right: 10px;
+    padding: 10px;
+    border-color: white;
+  }
+
+  .learn-more:hover {
+    background-color: #96bb7c;
+    border-color: #96bb7c;
+    color: white;
     padding: 10px;
   }
 }

@@ -1,0 +1,25 @@
+.statistics-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 75px 15px;
+}
+.statistics-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 70px;
+}
+.statistics-number {
+  font-size: 48px;
+  font-weight: 600;
+  color: #96bb7c;
+}
+
+.statistics-text {
+  font-size: 26px;
+  font-weight: 600;
+  color: black;
+}
