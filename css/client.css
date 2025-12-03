@@ -6,10 +6,12 @@
   justify-content: center;
   align-items: center;
   padding: 12px;
+  margin: 30px;
 }
 
 .review {
   display: flex;
+  width: 150px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -18,7 +20,7 @@
 }
 .stars {
   display: flex;
-  height: 100vh;
+  height: 30px;
   flex-direction: row;
   justify-content: center;
 }
@@ -36,8 +38,9 @@
 }
 .name {
   color: #96bb7c;
-  font-weight: 700;
+  font-weight: 500;
 }
 .role{
-  font-weight: 600;
+  font-weight: 400;
+  color:#737373;
 }

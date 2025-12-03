@@ -5,6 +5,7 @@
   align-items: center;
   margin: 75px 15px;
 }
+
 .statistics-item {
   display: flex;
   flex-direction: column;
@@ -12,6 +13,7 @@
   align-items: center;
   margin-right: 70px;
 }
+
 .statistics-number {
   font-size: 48px;
   font-weight: 600;
@@ -22,4 +24,95 @@
   font-size: 26px;
   font-weight: 600;
   color: black;
+}
+
+.client-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.client-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.learn-more {
+  color: #96bb7c;
+  margin: 15px 0;
+}
+
+.client-text {
+  margin: 15px 0;
+}
+
+.reviews-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+    margin-left: 228px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  margin: 30px;
+  border-radius: 20px;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.team-member-image {
+  height: 60%;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.team-info {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-info span {
+  padding: 10px;
+}
+
+.socials {
+  padding: 10px;
+}
+
+.team-name {
+  color: black;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.team-role {
+  color: #737373;
+  font-weight: 500;
+
+}
+
+.team-title-container{
+  display: flex;
+  flex-direction: column;
 }
