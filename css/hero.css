@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  height: 400px;
-  margin: 200px;
+  height: 100%;
+  width: 70%;
+  margin: 45px 0;
 }
 
 .left {

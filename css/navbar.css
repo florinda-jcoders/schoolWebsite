@@ -1,3 +1,8 @@
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 nav {
     padding: 0 20px;
     height: 80px;
@@ -6,8 +11,6 @@ nav {
     grid-template-rows: 1fr;
     grid-template-areas: "logo menu";
     align-items: center;
-    margin-left: 200px;
-    margin-right: 200px;
 }
 
 nav h1 {
