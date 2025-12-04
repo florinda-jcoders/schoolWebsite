@@ -1,9 +1,10 @@
 .footer {
-  width: 1440px;
-  height: 272px;
   opacity: 1;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  background: #fafafa;
+  margin-top: 40px;
 }
 
 ul {
@@ -84,4 +85,4 @@ ul {
   .container {
     flex-direction: column;
   }
-}/*# sourceMappingURL=footer.css.map */
+}
